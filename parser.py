@@ -17,9 +17,11 @@ class Parser:
         for token_list in self.tokens:
             python_line = ' '.join(self.translate_token(token) for token in token_list)
             python_code.append(python_line)
+            print("hahahahah", python_line)
         return python_code
     
     def translate_token(self, token):
+        print("token", token)
         return self.translations.get(token, token)
 
 def execute_python_code(python_code):

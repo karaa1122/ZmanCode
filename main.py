@@ -8,7 +8,6 @@ def main():
 
     parser = Parser(tokens)
     python_code = parser.parse()
-
     execute_python_code(python_code)
 
 if __name__ == "__main__":
