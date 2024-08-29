@@ -1,3 +1,6 @@
-
-agar rasta:
-     chap("choni")
+i = 0
+lo i in range(5):
+    chap(i)
+ka i < 5:
+    chap(i)
+    i = i + 1
